@@ -5,6 +5,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-top">
+        <img src="./vector.png" alt="" className="logo1" />
         <img src="./Frame.png" alt="Aquafina Logo" className="logo" />
         <ul className="menu">
           <li>Cộng đồng sống xanh</li>

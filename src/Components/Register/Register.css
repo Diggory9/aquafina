@@ -68,11 +68,11 @@
       margin-bottom: 10px;
     }
     
-    .input-phone {
-      width: 60%;
+    .input-phone1 {
+      width: 12%;
       padding: 8px;
       font-size: 14px;
-      margin: 10px 0;
+      margin: 10px 2px;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
@@ -112,7 +112,9 @@
     .btn-register:hover {
       background: #f2f8ff;
     }
-    
+    .reward{
+      color: #0033cc;
+    }
    
     .terms {
       margin-top: 20px;

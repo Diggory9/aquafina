@@ -10,15 +10,20 @@
     .navbar-bot p {
       margin: 10px 0; 
     }
+    .navbar-bot img {
+      width: 30px;
+      margin: 10px;
+    }
     .menu {
       list-style: none;
       display: flex;
+      
     }
     .menu li {
       margin: 0 30px;
       font-size: 3px;
       text-transform: uppercase;
-      color: #707172;
+      color: #346faa;
       cursor: pointer;
     }
     

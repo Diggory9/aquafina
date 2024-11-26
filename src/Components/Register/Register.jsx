@@ -1,6 +1,27 @@
-import React from "react";
 import "./Register.css";
+import React, { useState, useEffect } from "react";
 function Register() {
+  const [timeLeft, setTimeLeft] = useState(30);
+  const [isResendAllowed, setIsResendAllowed] = useState(false);
+  useEffect(() => {
+    if (timeLeft > 0) {
+      const timer = setInterval(() => {
+        setTimeLeft((prevTime) => prevTime - 1);
+      }, 1000);
+
+      return () => clearInterval(timer);
+    } else {
+      setIsResendAllowed(true);
+    }
+  }, [timeLeft]);
+  const handleResendCode = () => {
+    if (isResendAllowed) {
+      setTimeLeft(30);
+      setIsResendAllowed(false);
+    } else {
+      alert("Vui lòng đợi 30 giây trước khi gửi lại mã.");
+    }
+  };
   return (
     <div className="register-container">
       <h1 className="title">
@@ -18,18 +39,21 @@ function Register() {
 
       <div className="register-form">
         <h2 className="form-title">NHẬP OTP</h2>
-        <p className="">
-          Một mã sẽ được gửi vào số <span className="highlight">xxxxx</span>
+        <p className="reward">
+          Một mã sẽ OTP sẽ được gửi vào số <span className="highlight"></span>
         </p>
-        <input
-          type="text"
-          className="input-phone"
-          placeholder="Nhập số điện thoại của bạn"
-        />
+        <input type="text" className="input-phone1" />
+        <input type="text" className="input-phone1" />
+        <input type="text" className="input-phone1" />
+        <input type="text" className="input-phone1" />
         <button className="btn-register">Xác nhận</button>
         <p className="reward">
           Mã sẽ được gửi trong vòng <span className="highlight">30s</span>
         </p>
+
+        <a href="#" onClick={handleResendCode}>
+          {isResendAllowed ? "Gửi lại mã" : `Chờ ${timeLeft}s để gửi lại`}
+        </a>
       </div>
     </div>
   );
