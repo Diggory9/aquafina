@@ -1,0 +1,24 @@
+.navbar-bot {
+      text-align: center; 
+      padding: 20px;
+      background-color: #f8f8f8;
+      color: #336CC8; 
+      font-size: 14px; 
+      line-height: 1.5; 
+    }
+    
+    .navbar-bot p {
+      margin: 10px 0; 
+    }
+    .menu {
+      list-style: none;
+      display: flex;
+    }
+    .menu li {
+      margin: 0 30px;
+      font-size: 3px;
+      text-transform: uppercase;
+      color: #707172;
+      cursor: pointer;
+    }
+    

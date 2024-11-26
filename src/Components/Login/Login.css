@@ -1,0 +1,129 @@
+
+.login-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      
+      border-radius: 8px;
+    
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+    
+   
+    .title {
+      font-size: 24px;
+      text-align: center;
+      color: #0033cc;
+      margin: 10px 0;
+    }
+    
+    .highlight {
+      color: #00aaff;
+      font-weight: bold;
+    }
+    
+    .subtitle {
+      font-size: 16px;
+      color: #0036B4;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .description {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .bold {
+      font-weight: bold;
+      color: #0033cc;
+    }
+    
+   
+    .gift-image {
+      width: 80%;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    
+   
+    .reward {
+      font-size: 14px;
+      color: #333;
+      text-align: center;
+      margin: 10px 0 20px 0;
+    }
+    
+   
+    .login-form {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .form-title {
+      font-size: 28px;
+      color: #0036B4;
+      margin-bottom: 10px;
+    }
+    
+    .input-phone {
+      width: 60%;
+      padding: 8px;
+      font-size: 14px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .btn-login {
+      background: #0033cc;
+      color: white;
+      padding: 10px 20px;
+      font-size: 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      width: 70%;
+    }
+    
+    .btn-login:hover {
+      background: #002299;
+    }
+    
+    .separator {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #666;
+    }
+    
+    .btn-register {
+      background: white;
+      color: #0033cc;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: 1px solid #0033cc;
+      border-radius: 25px;
+      cursor: pointer;
+      width: 70%;
+    }
+    
+    .btn-register:hover {
+      background: #f2f8ff;
+    }
+    
+   
+    .terms {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    
+    .terms:hover {
+      text-decoration: underline;
+    }
+    
